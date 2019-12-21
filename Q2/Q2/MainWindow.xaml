@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf_Labsheet7_Q2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Labsheet7_Q2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="lbxMembers" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="406" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnAdd" Content="AddMember" HorizontalAlignment="Left" Margin="676,287,0,0" VerticalAlignment="Top" Width="74" Click="btnAdd_Click"/>
+        <Label Content="Member Type" HorizontalAlignment="Left" Margin="416,29,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="416,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.866,1.692" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Date Joined" HorizontalAlignment="Left" Margin="416,218,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Number of Members" HorizontalAlignment="Left" Margin="416,359,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox x:Name="tbxMemberType" HorizontalAlignment="Left" Margin="630,29,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="23" Margin="628,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122" TextChanged="TextBox_TextChanged"/>
+        <DatePicker x:Name="dtJoined" HorizontalAlignment="Left" Margin="630,227,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="Number_of_Members" HorizontalAlignment="Left" Margin="640,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="110"/>
+
+    </Grid>
+</Window>
